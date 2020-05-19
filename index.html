@@ -6,11 +6,11 @@
     <title>Tatsuya Kaneuji</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="c-page-home" style="height: 100%;">
     <div class="c-loading" style="height: 1000px; display: none;">
         <div class="c-loading__body" style="height: 1000px; display: none;"></div>
     </div>
-    <header>
+    <header class="c-header">
         <div class="c-header__body">
             <div class="c-header__title">
                 <h1 class="c-header__site-name">
@@ -19,8 +19,26 @@
                     </a>
                 </h1>
             </div>
-            <button class="c-nav__spmenu" data-open="false"></button>
-            <nav class="c-nav-global"></nav>
+            <!-- <button class="c-nav__spmenu" data-open="false"></button> -->
+            <nav class="c-nav-global">
+                <div class="c-nav-global__body">
+                    <ul class="c-nav-global__list">
+                        <li class="c-nav-global__item"><a href="">about me</a></li>
+                        <li class="c-nav-global__item"><a href="">works</a></li>
+                        <li class="c-nav-global__item"><a href="">skill</a></li>
+                        <!-- <li class="c-nav-global__item"></li>
+                        <li class="c-nav-global__item"></li>
+                        <li class="c-nav-global__item"></li>
+                        <li class="c-nav-global__item"></li> -->
+                    </ul>
+                    <p class="c-nav-global__contact">
+                        <a href="">contact</a>
+                    </p>
+                </div>
+                <div class="c-nav-global__sns">
+                    <ul></ul>
+                </div>
+            </nav>
         </div>
         <small class="c-header__copyright">TATSUYA KANEUJI's PORTFOLIO</small>
     </header>
