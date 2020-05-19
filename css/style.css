@@ -37,3 +37,15 @@ a{
 .c-nav-global__item > a{
     padding: 18px 15px;
 }
+.c-header__copyright{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    left: 1rem;
+    letter-spacing: .65px;
+    font-family: "MyFont";
+    font-size: 1.2rem;
+    z-index: 2000;
+    writing-mode: vertical-rl;
+}
