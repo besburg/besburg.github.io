@@ -5,6 +5,12 @@ a{
     text-decoration: none;
     color: #fff;
 }
+img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
 .c-page-home{
     background-color:#141414;
     color: #fff;
@@ -48,4 +54,28 @@ a{
     font-size: 1.2rem;
     z-index: 2000;
     writing-mode: vertical-rl;
+}
+.c-page-works{
+    display: flex;
+}
+.c-portfolio-frame{
+    border: 1px solid #fff;
+    margin: 0 3rem;
+    height: 35rem;
+}
+.c-page-works__item{
+    padding: 0 1rem;
+}
+.c-page-header{
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+.c-page-works__item-name{
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+}
+.c-page-works__item-content{
+    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Noto Serif JP', serif; */
 }
