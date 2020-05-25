@@ -105,8 +105,8 @@ img{
     letter-spacing: 0.3rem;
 }
 .c-page-works__item-name{
-    /* font-family: 'Noto Sans JP', sans-serif; */
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Noto Serif JP', serif; */
     text-align: center;
 }
 .c-page-works__item-content{
@@ -118,9 +118,20 @@ img{
     scroll-snap-type: y mandatory;
     /* height: 100vh; */
 }
-  .area {
+.area {
     scroll-snap-align: start;
     height: 70vh;
     padding: 1rem 0;
     box-sizing: border-box;
-  }
+}
+.mejp{
+    margin-bottom: unset;
+    letter-spacing: 0.3rem;
+    font-size: 2.1rem;
+    /* font-family: 'Noto Serif JP', serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.meen{
+    margin: unset;
+    font-weight: bold;
+}
