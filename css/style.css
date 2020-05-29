@@ -135,3 +135,71 @@ img{
     margin: unset;
     font-weight: bold;
 }
+.skill-list{
+    display: flex;
+    height: 15vh;
+}
+.skill-img{
+    flex: 1;
+    margin: auto;
+}
+.skill-content{
+    flex: 8;
+    padding-left: 2rem;
+}
+.skill-bar{
+    width: 95%;
+    height: 1.4rem;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* .skill-bar:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 50%;
+    
+    
+} */
+
+.color.p90.in:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 50%;
+    /* -webkit-animation: ratio90 1.5s forwards;
+    animation: ratio90 1.5s forwards; */
+    animation: anime1 30s forwards -2s;
+}
+
+.color.p40.in:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 50%;
+    /* -webkit-animation: ratio90 1.5s forwards;
+    animation: ratio90 1.5s forwards; */
+    animation: anime2 30s forwards -2s;
+}
+
+
+@keyframes anime1 {
+    0% {width: 0%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+    100% {width: 90%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+}
+
+@keyframes anime2 {
+    0% {width: 0%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+    100% {width: 40%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+}

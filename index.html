@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body class="c-page-home">
     <div class="c-loading" style="height: 1000px; display: none;">
@@ -25,9 +27,9 @@
             <nav class="c-nav-global">
                 <div class="c-nav-global__body">
                     <ul class="c-nav-global__list">
-                        <li class="c-nav-global__item"><a class="a-hover" href="">WORKS</a></li>
-                        <li class="c-nav-global__item"><a class="a-hover" href="">ABOUT ME</a></li>
-                        <li class="c-nav-global__item"><a class="a-hover" href="">SKILL</a></li>
+                        <li class="c-nav-global__item"><a class="a-hover" href="#works">WORKS</a></li>
+                        <li class="c-nav-global__item"><a class="a-hover" href="#aboutme">ABOUT ME</a></li>
+                        <li class="c-nav-global__item"><a class="a-hover" href="#skill">SKILL</a></li>
                         <li class="c-nav-global__item"><a class="a-hover" href="">CONTACT</a></li>
                         <!-- <li class="c-nav-global__item"></li>
                         <li class="c-nav-global__item"></li>
@@ -47,7 +49,7 @@
     </header>
     <main class="c-page-main">
         <div class="container c-portfolio-frame">
-            <section class="c-hero area">
+            <section id="works" class="c-hero area">
                 <div class="">
                     <h1 class="c-page-header">WORKS</h1>
                     <div class="c-page-works">
@@ -76,11 +78,11 @@
                 </div>
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/957v1NWAj8Y?modestbranding=1&fs=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ヴィ> -->
             </section>
-            <section class="c-hero area">
+            <section id="aboutme" class="c-hero area">
                 <div class="">
                     <h1 class="c-page-header">ABOUT ME</h1>
                     <div class="c-page-works">
-                        <div style="padding: 0 2rem;">
+                        <div style="flex: 2; padding: 0 2rem;">
                             <h1 class="mejp">金氏 竜哉</h1>
                             <p class="meen">KANEUJI TATSUYA</p>
                             <p>web designer / markup engineer</p>
@@ -89,24 +91,100 @@
                             <p style="padding-top: 1rem;">好きなもの</p>
                             <p>映画・ツーリング・麻雀</p>
                         </div>
-                        <img src="img/aboutme/aboutme.jpg" alt="" style="width: 25%;">
+                        <div style="flex: 1; text-align: center;">
+                            <img src="img/aboutme/aboutme.jpg" alt="" style="width: 70%">
+                        </div>
                     </div>
                 </div>
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/957v1NWAj8Y?modestbranding=1&fs=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ヴィ> -->
             </section>
-            <section class="c-hero area">
+            <section id="skill" class="c-hero area">
                 <div class="">
                     <h1 class="c-page-header">SKILL</h1>
                     <div class="c-page-works">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul style="flex: 1;">
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/html-5.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>HTML</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p90 in"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/css-3.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>CSS</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p40 in color"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/javascript.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>JavaScript</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p90 in"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/wordpress-icon.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>WordPress</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p90 in"></div>
+                                </div>
+                            </li>
                         </ul>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul style="flex: 1;">
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/github-octocat.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>Github</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p90 in"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/vue.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>Vue.js</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p90 in"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/nuxt.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>Nuxt.js</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p90 in"></div>
+                                </div>
+                            </li>
+                            <li class="skill-list">
+                                <div class="skill-img"><img src="img/skill/php.svg" alt=""></div>
+                                <div class="skill-content">
+                                    <div>
+                                        <h1>php</h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="skill-bar p90 in"></div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -121,4 +199,5 @@
         </div>
     </footer>
 </body>
+
 </html>
