@@ -115,8 +115,10 @@ img{
 }
 .container {
     overflow: auto;
-    scroll-snap-type: y mandatory;
     /* height: 100vh; */
+}
+.scroll-snap {
+    scroll-snap-type: y mandatory;
 }
 .area {
     scroll-snap-align: start;
@@ -153,6 +155,11 @@ img{
     background: #fff;
     position: relative;
     border-radius: 10px;
+
+    /* アニメーションに必要な部分 */
+    visibility: hidden;
+    opacity: 0;
+    transition: 1500ms;
 }
 
 /* .skill-bar:after {
@@ -167,7 +174,10 @@ img{
     
 } */
 
-.color.p90.in:after {
+.skill-bar.color.p90.in:after {
+    visibility: visible;
+    opacity: 1;
+
     content: "";
     position: absolute;
     left: -2px;
@@ -177,10 +187,10 @@ img{
     width: 50%;
     /* -webkit-animation: ratio90 1.5s forwards;
     animation: ratio90 1.5s forwards; */
-    animation: anime1 30s forwards -2s;
+    animation: anime1 3s forwards -2s;
 }
 
-.color.p40.in:after {
+.skill-bar.color.p40.in:after {
     content: "";
     position: absolute;
     left: -2px;
@@ -190,7 +200,7 @@ img{
     width: 50%;
     /* -webkit-animation: ratio90 1.5s forwards;
     animation: ratio90 1.5s forwards; */
-    animation: anime2 30s forwards -2s;
+    animation: anime2 3s forwards -2s;
 }
 
 
