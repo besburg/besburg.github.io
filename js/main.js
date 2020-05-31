@@ -21,11 +21,16 @@ $(function(){
     });
     $('a[href^=#s]').click(function(){
         var scroll = document.getElementById( "scroll" );
+        var bar = document.getElementsByClassName( "in" );
+        console.log(bar);
         var speed = 1000;
         var position = 2101
         scroll.classList.remove("scroll-snap");
         $(".container").stop().animate({scrollTop:position}, speed, "swing",function(){
             scroll.classList.add("scroll-snap");
+            for(var i = 0; i < bar.length; i++){
+                bar[i].classList.add("color");
+            }
         });
 		return false;
 	});

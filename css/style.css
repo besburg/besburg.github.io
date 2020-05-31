@@ -155,11 +155,6 @@ img{
     background: #fff;
     position: relative;
     border-radius: 10px;
-
-    /* アニメーションに必要な部分 */
-    visibility: hidden;
-    opacity: 0;
-    transition: 1500ms;
 }
 
 /* .skill-bar:after {
@@ -170,14 +165,9 @@ img{
     height: 100%;
     border-radius: 10px;
     width: 50%;
-    
-    
 } */
 
 .skill-bar.color.p90.in:after {
-    visibility: visible;
-    opacity: 1;
-
     content: "";
     position: absolute;
     left: -2px;
@@ -187,7 +177,7 @@ img{
     width: 50%;
     /* -webkit-animation: ratio90 1.5s forwards;
     animation: ratio90 1.5s forwards; */
-    animation: anime1 3s forwards -2s;
+    animation: anime1 3s forwards 0s;
 }
 
 .skill-bar.color.p40.in:after {
@@ -200,7 +190,7 @@ img{
     width: 50%;
     /* -webkit-animation: ratio90 1.5s forwards;
     animation: ratio90 1.5s forwards; */
-    animation: anime2 3s forwards -2s;
+    animation: anime2 3s forwards 0s;
 }
 
 
