@@ -63,6 +63,7 @@ img{
 }
 .c-header__site-name{
     font-family: "MyFont";
+    font-size: 2em;
 }
 .c-nav-global__body{
     display: flex;
