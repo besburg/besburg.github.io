@@ -1,5 +1,18 @@
 $(function(){
-	$('a[href^=#w]').click(function(){
+    var thisOffset;
+    var bar = document.getElementsByClassName( "in" );
+    $(window).on('load',function(){
+        thisOffset = 2101
+        console.log(thisOffset)
+    });
+    $("div").scroll(function() {
+        if( $('.container').scrollTop() + $('.container').height() > thisOffset){
+            for(var i = 0; i < bar.length; i++){
+                bar[i].classList.add("color");
+            }
+        }
+    });
+    $('a[href^=#w]').click(function(){
         var scroll = document.getElementById( "scroll" );
         var speed = 1000;
         var position = 701;
@@ -21,7 +34,6 @@ $(function(){
     });
     $('a[href^=#s]').click(function(){
         var scroll = document.getElementById( "scroll" );
-        var bar = document.getElementsByClassName( "in" );
         console.log(bar);
         var speed = 1000;
         var position = 2101

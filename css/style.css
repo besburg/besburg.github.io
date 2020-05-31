@@ -179,8 +179,7 @@ img{
     animation: ratio90 1.5s forwards; */
     animation: anime1 3s forwards 0s;
 }
-
-.skill-bar.color.p40.in:after {
+.skill-bar.color.p80.in:after {
     content: "";
     position: absolute;
     left: -2px;
@@ -192,14 +191,60 @@ img{
     animation: ratio90 1.5s forwards; */
     animation: anime2 3s forwards 0s;
 }
-
+.skill-bar.color.p70.in:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 50%;
+    /* -webkit-animation: ratio90 1.5s forwards;
+    animation: ratio90 1.5s forwards; */
+    animation: anime3 3s forwards 0s;
+}
+.skill-bar.color.p60.in:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 50%;
+    /* -webkit-animation: ratio90 1.5s forwards;
+    animation: ratio90 1.5s forwards; */
+    animation: anime4 3s forwards 0s;
+}
+.skill-bar.color.p50.in:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 50%;
+    /* -webkit-animation: ratio90 1.5s forwards;
+    animation: ratio90 1.5s forwards; */
+    animation: anime5 3s forwards 0s;
+}
 
 @keyframes anime1 {
     0% {width: 0%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
     100% {width: 90%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
 }
-
 @keyframes anime2 {
     0% {width: 0%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
-    100% {width: 40%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+    100% {width: 80%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+}
+@keyframes anime3 {
+    0% {width: 0%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+    100% {width: 70%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+}
+@keyframes anime4 {
+    0% {width: 0%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+    100% {width: 60%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+}
+@keyframes anime5 {
+    0% {width: 0%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
+    100% {width: 50%; background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);}
 }
