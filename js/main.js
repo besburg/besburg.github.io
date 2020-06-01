@@ -45,5 +45,21 @@ $(function(){
             }
         });
 		return false;
-	});
+    });
+    const typing = (element, sentence) => {
+        [...sentence].forEach((character, index) => {
+          setTimeout(() => {
+            document.querySelector(element).textContent += character;
+          }, 100 * ++index);
+        });
+    }
+    typing('#typing', 'はじめまして。'+'金氏\n竜哉です。');
+    const typing2 = (element, sentence) => {
+        [...sentence].forEach((character, index) => {
+          setTimeout(() => {
+            document.querySelector(element).textContent += character;
+          }, 200 * ++index);
+        });
+    }
+    typing2('#typing2', '良いものを正しく、楽しく伝えるための');
 });

@@ -252,3 +252,19 @@ img{
 .fullheight{
     height: 100%;
 }
+
+#typing::after {
+    content: '';
+    border-right: 2px solid;
+    animation: flashing 0.6s linear infinite;
+  }
+#typing2::after {
+content: '';
+border-right: 2px solid;
+animation: flashing 0.6s linear infinite;
+}
+@keyframes flashing {
+0% {
+    opacity: 0;
+}
+}
