@@ -3,7 +3,7 @@ $(function(){
     var bar = document.getElementsByClassName( "in" );
     $(window).on('load',function(){
         thisOffset = 2101
-        console.log(thisOffset)
+        // console.log(window.innerHeight);
     });
     $("div").scroll(function() {
         if( $('.container').scrollTop() + $('.container').height() > thisOffset){
@@ -14,8 +14,10 @@ $(function(){
     });
     $('a[href^=#w]').click(function(){
         var scroll = document.getElementById( "scroll" );
+        // console.log(scroll);
         var speed = 1000;
-        var position = 701;
+        var position = window.innerHeight*0.7;
+        // console.log(position);
         scroll.classList.remove("scroll-snap");
         $(".container").stop().animate({scrollTop:position}, speed, "swing",function(){
             scroll.classList.add("scroll-snap");
@@ -25,7 +27,7 @@ $(function(){
     $('a[href^=#a]').click(function(){
         var scroll = document.getElementById( "scroll" );
         var speed = 1000;
-        var position = 1401
+        var position = window.innerHeight*0.7*2
         scroll.classList.remove("scroll-snap");
         $(".container").stop().animate({scrollTop:position}, speed, "swing",function(){
             scroll.classList.add("scroll-snap");
@@ -36,13 +38,23 @@ $(function(){
         var scroll = document.getElementById( "scroll" );
         console.log(bar);
         var speed = 1000;
-        var position = 2101
+        var position = window.innerHeight*0.7*3
         scroll.classList.remove("scroll-snap");
         $(".container").stop().animate({scrollTop:position}, speed, "swing",function(){
             scroll.classList.add("scroll-snap");
             for(var i = 0; i < bar.length; i++){
                 bar[i].classList.add("color");
             }
+        });
+		return false;
+    });
+    $('a[href^=#c]').click(function(){
+        var scroll = document.getElementById( "scroll" );
+        var speed = 1000;
+        var position = window.innerHeight*0.7*4
+        scroll.classList.remove("scroll-snap");
+        $(".container").stop().animate({scrollTop:position}, speed, "swing",function(){
+            scroll.classList.add("scroll-snap");
         });
 		return false;
     });
@@ -53,7 +65,7 @@ $(function(){
           }, 100 * ++index);
         });
     }
-    typing('#typing', 'はじめまして。'+'金氏\n竜哉です。');
+    typing('#typing', 'はじめまして。金氏竜哉のポートフォリオです。よかったらどうぞご覧ください。');
     const typing2 = (element, sentence) => {
         [...sentence].forEach((character, index) => {
           setTimeout(() => {
@@ -61,5 +73,4 @@ $(function(){
           }, 200 * ++index);
         });
     }
-    typing2('#typing2', '良いものを正しく、楽しく伝えるための');
 });
