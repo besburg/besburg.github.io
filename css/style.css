@@ -76,6 +76,7 @@ img{
     justify-content: space-between;
 }
 .c-nav-global__item > a{
+    font-family: 'Noto Sans JP', sans-serif;
     padding: 18px 15px;
 }
 .c-header__copyright{
@@ -87,6 +88,15 @@ img{
     letter-spacing: .65px;
     font-family: "MyFont";
     font-size: 1.2rem;
+    z-index: 2000;
+    writing-mode: vertical-rl;
+}
+.c-header__copyright-l{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    right: 1rem;
     z-index: 2000;
     writing-mode: vertical-rl;
 }
@@ -285,6 +295,10 @@ animation: flashing 0.6s linear infinite;
     text-align: center;
     padding: 0 2rem;
 }
+#typing{
+    text-align: center;
+    padding-bottom: 2rem;
+}
 /* 画面サイズが480以下（スマホ）のときに適応されるCSS */
 /* 変更点だけを書けばおk　！！ */
 @media screen and (max-width:480px) {
@@ -346,6 +360,17 @@ animation: flashing 0.6s linear infinite;
         text-align: left;
     }
     #typing{
+        text-align: left;
+        padding: 0 1rem;
+    }
+    .spbtn{
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        /* font-family: "MyFont"; */
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .spbtn-p{
         padding: 0 1rem;
     }
 }
