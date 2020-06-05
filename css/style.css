@@ -269,7 +269,22 @@ animation: flashing 0.6s linear infinite;
     opacity: 0;
 }
 }
-
+.meimg{
+    flex: 1;
+    text-align: center;
+}
+.meimg img{
+    width: 70%;
+}
+@media screen and (min-width:480px) {
+    .pcnone{
+        display: none;
+    }
+}
+.contact-p{
+    text-align: center;
+    padding: 0 2rem;
+}
 /* 画面サイズが480以下（スマホ）のときに適応されるCSS */
 /* 変更点だけを書けばおk　！！ */
 @media screen and (max-width:480px) {
@@ -279,11 +294,58 @@ animation: flashing 0.6s linear infinite;
     .c-nav-global{
         display: none;
     }
+    .c-page-works{
+        /* display: block; */
+        flex-direction: column;
+    }
+    .order1{
+        order: 1;
+    }
     .c-page-works__item{
         padding: 0 0.5rem;
         flex: unset;
     }
+    .c-page-works__item-name{
+        font-size: 1rem;
+    }
     .c-page-works__item-content{
         display: none;
+    }
+    .meimg{
+        padding-top: 1rem;
+    }
+    .meimg img{
+        width: 50%;
+    }
+    .mejp{
+        font-size: 1.1rem;
+    }
+    .spsize1{
+        font-size: 0.75rem;
+    }
+    .spsize2{
+        font-size: 0.9rem;
+    }
+    .skill-list{
+        height: unset;
+    }
+    .skill-bar{
+        height: 0.6rem;
+    }
+    .skill-content{
+        padding-left: 1rem;
+    }
+    .skill-content div h1 {
+        font-size: 1rem;
+    }
+    .c-page-works ul{
+        margin: unset;
+        padding-left: 1rem;
+    }
+    .contact-p{
+        text-align: left;
+    }
+    #typing{
+        padding: 0 1rem;
     }
 }
