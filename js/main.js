@@ -14,7 +14,7 @@ $(function(){
     });
     $('a[href^=#w]').click(function(){
         var scroll = document.getElementById( "scroll" );
-        // console.log(scroll);
+        // console.log(window.innerHeight);
         var speed = 1000;
         var position = window.innerHeight*0.7;
         // console.log(position);
