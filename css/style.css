@@ -302,6 +302,9 @@ animation: flashing 0.6s linear infinite;
 /* 画面サイズが480以下（スマホ）のときに適応されるCSS */
 /* 変更点だけを書けばおk　！！ */
 @media screen and (max-width:560px) {
+    .c-header__site-name{
+        font-size: 1em;
+    }
     .none{
         display: none;
     }
