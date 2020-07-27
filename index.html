@@ -10,6 +10,7 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body class="c-page-home">
     <div class="c-loading" style="height: 1000px; display: none;">
@@ -69,7 +70,7 @@
                 <section id="works" class="c-hero area">
                     <div class="fullheight">
                         <h1 class="c-page-header">WORKS</h1>
-                        <div class="c-page-works">
+                        <div class="c-page-works" style="padding-top: 2%; align-items: unset;">
                             <div class="c-page-works__item">
                                 <a cla href="https://www.pu-kumamoto.ac.jp/~marumaru/index.html" target="_blank" rel="noopener">
                                     <img src="img/works/marumaru.png" alt="">
@@ -77,9 +78,19 @@
                                 <h1 class="c-page-works__item-name">丸山研究室</h1>
                                 <p class="c-page-works__item-content">熊本県立大学の丸山研究室ホームページを作成しました。facebookの情報が表示されるようになっており、今まで行われてきたプロジェクトのスライドショーを見ることもできます。丸山教授の担当教科を確認することもでき、シラバスや授業資料もダウンロードでき学生からも好評でした。</p>
                             </div>
-                            <div class="c-page-works__item none">
+                            <div class="c-page-works__item" style="pointer-events: none;">
+                              <div class="movie-wrap">
+                                <div id="ytplayer"></div>
+                              </div>
+                              <h1 class="c-page-works__item-name">nid cafe</h1>
+                              <p class="c-page-works__item-content">熊本にあるnidcafeさんの紹介動画をとりました。友人同士でcafeに向かうところから、食事や雑貨を見て回る様子を人の視点で見ているように撮影し編集しました。</p>
                             </div>
-                            <div class="c-page-works__item none">
+                            <div class="c-page-works__item">
+                              <a cla href="https://www.pu-kumamoto.ac.jp/~marumaru/index.html" target="_blank" rel="noopener">
+                                <img src="img/works/marumaru.png" alt="">
+                              </a>
+                              <h1 class="c-page-works__item-name">丸山研究室</h1>
+                              <p class="c-page-works__item-content">熊本県立大学の丸山研究室ホームページを作成しました。facebookの情報が表示されるようになっており、今まで行われてきたプロジェクトのスライドショーを見ることもできます。丸山教授の担当教科を確認することもでき、シラバスや授業資料もダウンロードでき学生からも好評でした。</p>
                             </div>
                         </div>
                     </div>
@@ -260,6 +271,41 @@
             <a href="" target="_blank" rel="noopener"><i class="fab fa-twitter fa-2x" style="color: #545555;"></i></a>
         </div>
     </footer>
+    <script>
+      // Load the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+      // Replace the 'ytplayer' element with an <iframe> and
+      // YouTube player after the API code downloads.
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('ytplayer', {
+          height: '100%',
+          width: '100%',
+          videoId: 'UcPpXoFhugM',
+          disablekb: 1, //キーボード操作排除
+          fs: 0,
+          playerVars: {
+            version: 3,
+            loop: 1, // ループし
+            playlist: 'UcPpXoFhugM',
+            controls: 0, // コントローラー非表示
+            autoplay: 1, // 自動再生おん
+            rel: 0,  // オススメ動画を表示させない
+            showinfo: 1 // タイトル表示
+          },
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.setVolume(0);
+      }
+    </script>
 </body>
 
 </html>
